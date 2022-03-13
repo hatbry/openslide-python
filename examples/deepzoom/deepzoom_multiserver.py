@@ -263,8 +263,9 @@ if __name__ == '__main__':
             delattr(opts, k)
     app.config.from_object(opts)
     # Set slide directory
+    slide_path = '/Users/brycehatfield/Programming/experiments/melanoma/slides'
     try:
-        app.config['SLIDE_DIR'] = args[0]
+        app.config['SLIDE_DIR'] = slide_path
     except IndexError:
         pass
 
